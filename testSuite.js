@@ -24,7 +24,7 @@
 //     });
 // });
 
-casper.test.begin('Page content tests', 3, function suite(test) {
+casper.test.begin('Simple page content test', 3, function suite(test) {
     casper.start('./index.html', function() {
         test.assertExists('h1.page-title');
         test.assertSelectorHasText('h1.page-title', 'Hello');
